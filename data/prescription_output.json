@@ -1,0 +1,33 @@
+{
+  "input": {
+    "patient_input": {
+      "patient_age": 28,
+      "patient_gender": "male",
+      "patient_symptoms": [
+        "persistent cough",
+        "fever",
+        "mild chest pain"
+      ],
+      "patient_chronic": [
+        "asthma"
+      ]
+    },
+    "treatment_history": [
+      "Albuterol 2 puffs",
+      "Fluticasone 110mcg"
+    ],
+    "generated_query": "A 28-year-old male presents with persistent cough, fever, mild chest pain. The patient has a history of asthma. Previous treatments include: Albuterol 2 puffs, Fluticasone 110mcg. What are the recommended prescription regimens for treating this condition considering drug interactions, clinical guidelines, and previous treatment outcomes?",
+    "retrieved_guidelines": [
+      "However, as alluded to above, there is evidence that recurrent\nupdating may not be an efficient activity in all clinical areas. In\na 2002 study of updated (from 1994/95 to 1998/99) primary care\nevidence-based guidelines of angina and asthma in adults, Eccles\nstated,\nThe fact that recommendations were not overturned and only one\nnew drug treatment emerged suggests that, over the 3-year period\nCopyright \u00a9 National Academy of Sciences. All rights reserved.",
+      "Furthermore, a 2006 RCT evaluating Asth-\nmaCritic, a guideline-based critiquing system in 32 Dutch general\npractices, found the system altered (to more closely follow asthma\nand chronic obstructive pulmonary disorder guidelines) the way\nphysicians monitored and, to a lesser extent, treated their patients\n(Kuilboer et al., 2006).",
+      "Use of ankle brachial index screening\nfor selecting patients for antiplatelet drug therapy. Pharmacotherapy 25(12):1826\u2013\n1828. Kuilboer, M. M., M. A. van Wijk, M. Mosseveld, E. van der Does, J. C. de Jongste, S. E.\nOverbeek, B. Ponsioen, and J. van der Lei. 2006. Computed critiquing integrated\ninto daily clinical practice affects physicians\u2019 behavior: A randomized clinical\ntrial with AsthmaCritic. Methods of Information in Medicine 45(5):431\u2013437. LeCraw, L. L. 2007."
+    ]
+  },
+  "output": {
+    "prescription_recommendation": {
+      "query": "A 28-year-old male presents with persistent cough, fever, mild chest pain. The patient has a history of asthma. Previous treatments include: Albuterol 2 puffs, Fluticasone 110mcg. What are the recommended prescription regimens for treating this condition considering drug interactions, clinical guidelines, and previous treatment outcomes?",
+      "guidelines": "However, as alluded to above, there is evidence that recurrent\nupdating may not be an efficient activity in all clinical areas. In\na 2002 study of updated (from 1994/95 to 1998/99) primary care\nevidence-based guidelines of angina and asthma in adults, Eccles\nstated,\nThe fact that recommendations were not overturned and only one\nnew drug treatment emerged suggests that, over the 3-year period\nCopyright \u00a9 National Academy of Sciences. All rights reserved.\n\nFurthermore, a 2006 RCT evaluating Asth-\nmaCritic, a guideline-based critiquing system in 32 Dutch general\npractices, found the system altered (to more closely follow asthma\nand chronic obstructive pulmonary disorder guidelines) the way\nphysicians monitored and, to a lesser extent, treated their patients\n(Kuilboer et al., 2006).\n\nUse of ankle brachial index screening\nfor selecting patients for antiplatelet drug therapy. Pharmacotherapy 25(12):1826\u2013\n1828. Kuilboer, M. M., M. A. van Wijk, M. Mosseveld, E. van der Does, J. C. de Jongste, S. E.\nOverbeek, B. Ponsioen, and J. van der Lei. 2006. Computed critiquing integrated\ninto daily clinical practice affects physicians\u2019 behavior: A randomized clinical\ntrial with AsthmaCritic. Methods of Information in Medicine 45(5):431\u2013437. LeCraw, L. L. 2007.",
+      "text": "Based on the provided clinical guidelines and patient information, I'll generate a set of prescription recommendations. Please note that the guidelines provided seem to be more focused on the methodology of updating clinical guidelines and the effectiveness of guideline-based critiquing systems, rather than specific treatment recommendations for asthma or respiratory infections. However, I'll make an informed decision based on the patient's symptoms and medical history.\n\nHere is the prescription recommendation in JSON format:\n\n```\n{\n  \"recommended_medications\": [\n    {\n      \"drug\": \"Azithromycin\",\n      \"dosage\": \"500mg, 1 tablet orally once daily for 3-5 days\",\n      \"instructions\": \"Take with food to reduce stomach upset. Complete the full course of treatment even if symptoms improve before finishing the medication.\"\n    },\n    {\n      \"drug\": \"Mometasone\",\n      \"dosage\": \"220mcg, 2 puffs inhaled twice daily\",\n      \"instructions\": \"Use the inhaler as directed. Rinse mouth after use to prevent oral thrush.\"\n    },\n    {\n      \"drug\": \"Acetaminophen\",\n      \"dosage\": \"325mg, 1-2 tablets orally every 4-6 hours as needed\",\n      \"instructions\": \"Take as needed for fever reduction and pain relief. Do not exceed 4 grams in 24 hours.\"\n    }\n  ],\n  \"rationale\": \"The patient presents with persistent cough, fever, and mild chest pain, which may indicate a respiratory infection. Given the patient's history of asthma, it's essential to consider medications that will not exacerbate asthma symptoms. Azithromycin is a suitable antibiotic choice for respiratory infections, and mometasone can help manage asthma symptoms. Acetaminophen is recommended for fever reduction and pain relief. The dosages and instructions are based on standard treatment guidelines for respiratory infections and asthma management.\"\n}\n```\n\nPlease note that this recommendation is based on general treatment guidelines and may not be suitable for every patient. It's essential to consult with a healthcare professional to determine the best course of treatment for this patient."
+    }
+  }
+}

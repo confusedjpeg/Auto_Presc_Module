@@ -1,0 +1,6 @@
+{
+  "patient_age": 28,
+  "patient_gender": "male",
+  "patient_symptoms": ["persistent cough", "fever", "mild chest pain"],
+  "patient_chronic": ["asthma"]
+}

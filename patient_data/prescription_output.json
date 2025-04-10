@@ -1,0 +1,69 @@
+{
+  "input_data_used": {
+    "patient_input_file": "d:\\arogo\\auto_presc_RAG\\patient_data\\patient_input.json",
+    "health_record_file": "d:\\arogo\\auto_presc_RAG\\patient_data\\past_prescriptions.json",
+    "patient_age": 28,
+    "patient_gender": "male",
+    "patient_symptoms": [
+      "persistent cough",
+      "fever",
+      "mild chest pain"
+    ],
+    "patient_chronic_conditions": [
+      "asthma"
+    ],
+    "extracted_treatment_history": [
+      "Albuterol (2 puffs)",
+      "Combination Inhaler (Fixed dose)",
+      "Montelukast (10mg)",
+      "Salmeterol (50mcg)",
+      "Fluticasone (110mcg)",
+      "Budesonide (200mcg)"
+    ],
+    "extracted_lab_reports": [
+      "FEV1 (Pulmonary Function Test): 78%",
+      "WBC (Complete Blood Count): 6.5 x10^3/uL",
+      "Glucose (Blood Chemistry Panel): 98 mg/dL",
+      "CRP (Inflammatory Marker Test): 4 mg/L"
+    ],
+    "graph_nodes": 25,
+    "graph_edges": 51,
+    "node2vec_embeddings_generated": 14,
+    "aggregated_graph_embedding_used": true,
+    "mlp_historical_analysis": "Historical treatment effectiveness is inconclusive based on current analysis; consider guidelines and current presentation strongly.",
+    "retrieved_guideline_count": 3,
+    "llm_query_details": "Patient Profile: 28-year-old male.\nPresenting Symptoms: persistent cough, fever, mild chest pain.\nChronic Conditions/History: asthma.\nRelevant Past Treatments for Chronic Conditions: Albuterol (2 puffs); Combination Inhaler (Fixed dose); Montelukast (10mg); Salmeterol (50mcg); Fluticasone (110mcg); Budesonide (200mcg).\nRelevant Lab Findings: FEV1 (Pulmonary Function Test): 78%; WBC (Complete Blood Count): 6.5 x10^3/uL; Glucose (Blood Chemistry Panel): 98 mg/dL; CRP (Inflammatory Marker Test): 4 mg/L.\nAutomated Historical Trend Analysis: Historical treatment effectiveness is inconclusive based on current analysis; consider guidelines and current presentation strongly.",
+    "retrieved_guideline_snippets": [
+      "A. Finkelstein, V. J. Carey, E. H. Wagner, T. S. Inui, A. L. Fuhlbrigge,\nS. B. Soumerai, S. D. Sulli...",
+      "Eccles, M., E. McColl, N. Steen, N. Rousseau, J. Grimshaw, and D. Parkin. 2002. Effect of computeris...",
+      "Furthermore, a 2006 RCT evaluating Asth-\nmaCritic, a guideline-based critiquing system in 32 Dutch g..."
+    ]
+  },
+  "generated_output": {
+    "prescription_recommendation": {
+      "recommended_medications": [
+        {
+          "drug": "Albuterol",
+          "dosage": "2 puffs PRN",
+          "instructions": "Use for symptom relief of persistent cough and mild chest pain."
+        },
+        {
+          "drug": "Montelukast",
+          "dosage": "10mg daily",
+          "instructions": "Continue therapy as part of chronic asthma management."
+        },
+        {
+          "drug": "Fluticasone",
+          "dosage": "110mcg daily",
+          "instructions": "Continue therapy as part of chronic asthma management."
+        },
+        {
+          "drug": "Salmeterol",
+          "dosage": "50mcg daily",
+          "instructions": "Continue therapy as part of chronic asthma management."
+        }
+      ],
+      "rationale": "Recommendation based on the patient's chronic asthma history and current presentation of persistent cough, fever, and mild chest pain. The patient's historical treatment effectiveness is inconclusive, and the FEV1 result of 78% suggests ongoing asthma management is necessary. The combination of Albuterol, Montelukast, Fluticasone, and Salmeterol is consistent with guideline-based care for asthma management (Eccles et al., 2002; Kuilboer et al., 2006)."
+    }
+  }
+}

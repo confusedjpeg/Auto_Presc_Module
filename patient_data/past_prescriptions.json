@@ -1,0 +1,247 @@
+{
+  "user_id": "123e4567-e89b-12d3-a456-426614174000",
+  "prescriptions": [
+    {
+      "prescription_id": "rx1",
+      "diagnosis": "Asthma",
+      "symptoms": ["shortness of breath", "wheezing", "persistent cough"],
+      "doctorAdvice": "Use the inhaler as required and monitor peak flow.",
+      "followUpDate": "2023-09-15T00:00:00Z",
+      "medicines": [
+        {
+          "medicineName": "Albuterol",
+          "dosage": "2 puffs",
+          "frequency": "PRN",
+          "instructions": "Use inhaler during acute episodes.",
+          "duration": 7,
+          "chemicalComposition": "Salbutamol"
+        }
+      ],
+      "labTests": [
+        {
+          "id": "lt1",
+          "testName": "FEV1",
+          "testDescription": "Forced Expiratory Volume in 1 second"
+        }
+      ]
+    },
+    {
+      "prescription_id": "rx2",
+      "diagnosis": "Asthma",
+      "symptoms": ["persistent cough", "chest tightness"],
+      "doctorAdvice": "Maintain daily controller medication.",
+      "followUpDate": "2022-12-10T00:00:00Z",
+      "medicines": [
+        {
+          "medicineName": "Fluticasone",
+          "dosage": "110mcg",
+          "frequency": "2 puffs twice daily",
+          "instructions": "Use as a maintenance therapy.",
+          "duration": 30,
+          "chemicalComposition": "Fluticasone propionate"
+        }
+      ],
+      "labTests": [
+        {
+          "id": "lt2",
+          "testName": "Peak Expiratory Flow",
+          "testDescription": "Measure of lung function"
+        }
+      ]
+    },
+    {
+      "prescription_id": "rx3",
+      "diagnosis": "Allergic Rhinitis",
+      "symptoms": ["sneezing", "runny nose", "itchy eyes"],
+      "doctorAdvice": "Avoid known allergens; use antihistamines as needed.",
+      "followUpDate": "2023-03-20T00:00:00Z",
+      "medicines": [
+        {
+          "medicineName": "Cetirizine",
+          "dosage": "10mg",
+          "frequency": "Once daily",
+          "instructions": "Take once daily in the morning.",
+          "duration": 14,
+          "chemicalComposition": "Cetirizine hydrochloride"
+        }
+      ],
+      "labTests": []
+    },
+    {
+      "prescription_id": "rx4",
+      "diagnosis": "Bronchitis",
+      "symptoms": ["productive cough", "mild fever", "chest discomfort"],
+      "doctorAdvice": "Rest and hydration are key; antibiotics if symptoms worsen.",
+      "followUpDate": "2022-06-05T00:00:00Z",
+      "medicines": [
+        {
+          "medicineName": "Azithromycin",
+          "dosage": "500mg",
+          "frequency": "Once daily for 3 days",
+          "instructions": "Take for bacterial bronchitis.",
+          "duration": 3,
+          "chemicalComposition": "Azithromycin"
+        }
+      ],
+      "labTests": [
+        {
+          "id": "lt3",
+          "testName": "CRP",
+          "testDescription": "C-reactive protein level"
+        }
+      ]
+    },
+    {
+      "prescription_id": "rx5",
+      "diagnosis": "Asthma",
+      "symptoms": ["shortness of breath", "wheezing"],
+      "doctorAdvice": "Reevaluate controller medication dose.",
+      "followUpDate": "2021-11-30T00:00:00Z",
+      "medicines": [
+        {
+          "medicineName": "Montelukast",
+          "dosage": "10mg",
+          "frequency": "Once daily",
+          "instructions": "Use as an adjunct therapy to inhaled steroids.",
+          "duration": 30,
+          "chemicalComposition": "Montelukast sodium"
+        }
+      ],
+      "labTests": []
+    },
+    {
+      "prescription_id": "rx6",
+      "diagnosis": "Asthma",
+      "symptoms": ["persistent cough", "chest tightness", "wheezing"],
+      "doctorAdvice": "Adjust inhaled corticosteroid dosage.",
+      "followUpDate": "2020-08-15T00:00:00Z",
+      "medicines": [
+        {
+          "medicineName": "Budesonide",
+          "dosage": "200mcg",
+          "frequency": "2 puffs twice daily",
+          "instructions": "Ensure proper inhaler technique.",
+          "duration": 30,
+          "chemicalComposition": "Budesonide"
+        }
+      ],
+      "labTests": [
+        {
+          "id": "lt4",
+          "testName": "Spirometry",
+          "testDescription": "Measure lung function"
+        }
+      ]
+    },
+    {
+      "prescription_id": "rx7",
+      "diagnosis": "Asthma",
+      "symptoms": ["shortness of breath", "persistent cough"],
+      "doctorAdvice": "Monitor for side effects and adjust medication if needed.",
+      "followUpDate": "2019-05-20T00:00:00Z",
+      "medicines": [
+        {
+          "medicineName": "Salmeterol",
+          "dosage": "50mcg",
+          "frequency": "One inhalation twice daily",
+          "instructions": "Use in combination with a corticosteroid.",
+          "duration": 60,
+          "chemicalComposition": "Salmeterol xinafoate"
+        }
+      ],
+      "labTests": []
+    },
+    {
+      "prescription_id": "rx8",
+      "diagnosis": "Chronic Obstructive Pulmonary Disease",
+      "symptoms": ["persistent cough", "shortness of breath", "wheezing"],
+      "doctorAdvice": "Evaluate suitability for long-acting bronchodilators.",
+      "followUpDate": "2021-03-10T00:00:00Z",
+      "medicines": [
+        {
+          "medicineName": "Tiotropium",
+          "dosage": "18mcg",
+          "frequency": "Once daily",
+          "instructions": "Use with a dry powder inhaler.",
+          "duration": 30,
+          "chemicalComposition": "Tiotropium bromide"
+        }
+      ],
+      "labTests": [
+        {
+          "id": "lt5",
+          "testName": "Oxygen Saturation",
+          "testDescription": "Measure oxygen levels in blood"
+        }
+      ]
+    },
+    {
+      "prescription_id": "rx9",
+      "diagnosis": "Allergic Rhinitis",
+      "symptoms": ["sneezing", "runny nose", "itchy eyes"],
+      "doctorAdvice": "Reduce allergen exposure and use antihistamines.",
+      "followUpDate": "2020-12-01T00:00:00Z",
+      "medicines": [
+        {
+          "medicineName": "Loratadine",
+          "dosage": "10mg",
+          "frequency": "Once daily",
+          "instructions": "Take once daily with water.",
+          "duration": 14,
+          "chemicalComposition": "Loratadine"
+        }
+      ],
+      "labTests": []
+    },
+    {
+      "prescription_id": "rx10",
+      "diagnosis": "Asthma",
+      "symptoms": ["wheezing", "shortness of breath", "cough"],
+      "doctorAdvice": "Consider combination therapy for improved control.",
+      "followUpDate": "2022-04-05T00:00:00Z",
+      "medicines": [
+        {
+          "medicineName": "Combination Inhaler",
+          "dosage": "Fixed dose",
+          "frequency": "Two puffs twice daily",
+          "instructions": "Use as directed; follow up in 1 month.",
+          "duration": 30,
+          "chemicalComposition": "Fluticasone/Salmeterol"
+        }
+      ],
+      "labTests": [
+        {
+          "id": "lt6",
+          "testName": "Exhaled Nitric Oxide",
+          "testDescription": "Marker for airway inflammation"
+        }
+      ]
+    }
+  ],
+  "labReport": [
+    {
+      "id": "lr1",
+      "pathologyName": "Pulmonary Function Test",
+      "testName": "FEV1",
+      "testResult": "78%"
+    },
+    {
+      "id": "lr2",
+      "pathologyName": "Complete Blood Count",
+      "testName": "WBC",
+      "testResult": "6.5 x10^3/uL"
+    },
+    {
+      "id": "lr3",
+      "pathologyName": "Blood Chemistry Panel",
+      "testName": "Glucose",
+      "testResult": "98 mg/dL"
+    },
+    {
+      "id": "lr4",
+      "pathologyName": "Inflammatory Marker Test",
+      "testName": "CRP",
+      "testResult": "4 mg/L"
+    }
+  ]
+}
