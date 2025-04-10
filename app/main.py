@@ -1,5 +1,7 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from app.core.config import settings
 from app.models.schema import HealthRecordCreate, HealthRecord
 from app.services.s3_service import s3_service
@@ -9,6 +11,7 @@ from datetime import datetime
 import json
 from typing import Optional
 import logging
+import os
 
 # Import the RAG pipeline components
 from app.services.rag_service import RAGService
@@ -29,8 +32,18 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Mount static files
+app.mount("/static", StaticFiles(directory="app/static"), name="static")
+
 # Initialize RAG service
 rag_service = RAGService()
+
+@app.get("/")
+async def read_root():
+    """
+    Serve the frontend application
+    """
+    return FileResponse("app/static/index.html")
 
 @app.post("/api/v1/analyze-prescription", response_model=HealthRecord)
 async def analyze_prescription(
