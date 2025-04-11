@@ -1,7 +1,7 @@
 import numpy as np
 from sentence_transformers import SentenceTransformer
 import faiss
-from pydantic.v1 import Field, root_validator, validator
+from pydantic import Field, root_validator, validator
 from dotenv import load_dotenv
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
